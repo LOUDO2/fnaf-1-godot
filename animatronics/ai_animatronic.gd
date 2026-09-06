@@ -49,7 +49,7 @@ func allow_moving() -> void:
 func _try_to_move() -> void:
 	var old_position = current_position
 	var picked_nb = randi_range(1, MAX_AI_LEVEL)
-	var cannot_move = ai_level < picked_nb or current_position == CameraMap.Camera.OFFICE
+	var cannot_move = ai_level <= picked_nb or current_position == CameraMap.Camera.OFFICE
 	
 	if cannot_move:
 		return
