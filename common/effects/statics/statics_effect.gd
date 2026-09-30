@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	flicker_time += delta
 	if flicker_time >= FLICKER_TIMER:
 		flicker_time = 0.0
-		statics.modulate.a = randf_range(0.3, 0.45)
+		statics.modulate.a = randf_range(0.2, 0.35)
